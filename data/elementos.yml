@@ -20,3 +20,20 @@ checkbox_receber_ofertas:  "#ReceberAvisoEmail"
 checkbox_receber_informacoes: "#ReceberAvisoSms"
 botao_continuar_cadastro: "#btnClienteSalvar"
 label_nome_cliente: "#lblLoginMsg"
+
+radio_button_pj: ".labelPJ"
+campo_pessoa_juridica: ".pJuridica"
+campo_razao_social: "#RazaoSocial"
+campo_nome_fantasia: "#NomeFantasia"
+campo_cnpj: "#Cnpj"
+campo_estado_empresa: "#EstadoSedeEmpresa"
+campo_inscricao_estadual: "#InscricaoEstadual"
+campo_telefone_pj: "#Telefone1DDDPJ"
+campo_ddd_pj: "#Telefone1PJ"
+botao_remove_pj: "#lnkRemoveTelefone2PJ"
+label_Identificacao: "Identificação"
+logo: ".logo"
+
+texto_busca: "#ctl00_TopBar_PaginaSistemaArea1_ctl10_ctl00_txtBusca"
+botao_buscar: .bt.ic-search
+primeiro_item: .hproduct
