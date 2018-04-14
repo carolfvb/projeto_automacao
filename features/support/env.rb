@@ -3,7 +3,9 @@ require 'yaml'
 require 'pry'
  require 'capybara/cucumber'
  require 'capybara/poltergeist'
+ require 'FFaker'
 
+URL=YAML.load_file('data/urls.yml')
 EL=YAML.load_file('data/elementos.yml')
 
  if ENV['chrome']
@@ -31,5 +33,8 @@ EL=YAML.load_file('data/elementos.yml')
    Capybara.javascript_driver = :poltergeist
    Capybara.default_driver = :poltergeist
  else
-   Capybara.default_driver = :selenium
+   Capybara.default_driver = :chrome
+   Capybara.register_driver :chrome do |app|
+     Capybara::Selenium::Driver.new(app, browser: :chrome)
+   end
  end
